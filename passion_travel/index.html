@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>project</title>
+    <link href="http://css.mafengwo.net/css/mfw-toolbar.css?1537192876" rel="stylesheet" type="text/css" />
+    <link href="http://css.mafengwo.net/css/mfw-footer.css?1558532347" rel="stylesheet" type="text/css" />
+    <link
+        href="http://css.mafengwo.net/css/cv/css+base:css+jquery.suggest:css+plugins:css+plugins+jquery.jgrowl:css+other+popup:css+app+topbar_v2^alw^1542357401.css"
+        rel="stylesheet" type="text/css" />
+    <link href="http://css.mafengwo.net/css/mfw-ask/mfw-ask.css?1552011937" rel="stylesheet" type="text/css" />
+    <link href="https://css.mafengwo.net/css/mfw-footer.css?1558532347" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <style>
+        .dropbox {
+            border: .25rem dashed #007bff;
+            min-height: 5rem;
+        }
+    </style>
+    <script type="text/javascript" async charset="utf-8" src="http://w.cnzz.com/c.php?id=30065558&amp;async=1"></script>
+    <script type="text/javascript">
+        window.Env = {
+            qa_page: "index",
+            WWW_HOST: "www.mafengwo.cn",
+            IMG_HOST: "images.mafengwo.net",
+            W_HTTP: "http:\/\/w.mafengwo.cn",
+            P_HOST: "passport.mafengwo.cn",
+            P_HTTP: "https:\/\/passport.mafengwo.cn",
+            PAGELET_HTTP: "http:\/\/pagelet.mafengwo.cn",
+            JS_HOST: "js.mafengwo.net",
+            TONGJI_HOST: "tongji.mafengwo.cn",
+            UID: 0,
+            CSTK: "717a619c41370fe3e4af4430c0933039_8a1beaf9a26d5bec48fa128f1f99e44b",
+            GOOGLE_MAP_KEY: "AIzaSyD-Su0x_rPy1xehlMBcMyTqWkU49Bk53nQ"
+        };
+    </script>
+    <script async src="http://js.mafengwo.net/js/BrowserState.js?1542357400" crossorigin="anonymous"></script>
+    <script type="text/javascript" async charset="utf-8" src="http://w.cnzz.com/c.php?id=30065558&amp;async=1"></script>
+    <script type="text/javascript">
+        window.Env = {
+            WWW_HOST: "www.mafengwo.cn",
+            IMG_HOST: "images.mafengwo.net",
+            W_HTTP: "http:\/\/w.mafengwo.cn",
+            P_HOST: "passport.mafengwo.cn",
+            P_HTTP: "https:\/\/passport.mafengwo.cn",
+            PAGELET_HTTP: "http:\/\/pagelet.mafengwo.cn",
+            JS_HOST: "js.mafengwo.net",
+            TONGJI_HOST: "tongji.mafengwo.cn",
+            UID: 0,
+            CSTK: "036b8e32e3d08a29c3438806314b4b00_1ee2d0f3d3d583ce8d882f5e4b05a900",
+            GOOGLE_MAP_KEY: "AIzaSyD-Su0x_rPy1xehlMBcMyTqWkU49Bk53nQ"
+        };
+    </script>
+    <script type="text/javascript" async charset="utf-8" src="http://w.cnzz.com/c.php?id=30065558&amp;async=1"></script>
+    <script type="text/javascript">
+        window.Env = {
+            Qid: 10733740,
+            Aid: 0,
+            mddid: 187613,
+            is_vote_question: 0,
+            WWW_HOST: "www.mafengwo.cn",
+            IMG_HOST: "images.mafengwo.net",
+            W_HTTP: "http:\/\/w.mafengwo.cn",
+            P_HOST: "passport.mafengwo.cn",
+            P_HTTP: "https:\/\/passport.mafengwo.cn",
+            PAGELET_HTTP: "http:\/\/pagelet.mafengwo.cn",
+            JS_HOST: "js.mafengwo.net",
+            TONGJI_HOST: "tongji.mafengwo.cn",
+            UID: 0,
+            CSTK: "c5f1aef30b347c20ef3949d0add6ba35_fb2f9301825386a363572f1d6c1941e4",
+            GOOGLE_MAP_KEY: "AIzaSyD-Su0x_rPy1xehlMBcMyTqWkU49Bk53nQ"
+        };
+    </script>
+    <script type="text/javascript" async charset="utf-8" src="http://w.cnzz.com/c.php?id=30065558&amp;async=1"></script>
+    <script async src="http://js.mafengwo.net/js/BrowserState.js?1542357400" crossorigin="anonymous"></script>
+    <script type="text/javascript" async charset="utf-8" src="http://w.cnzz.com/c.php?id=30065558&amp;async=1"></script>
+    <script src="https://hm.baidu.com/hm.js?8288b2ed37e5bc9b4c9f7008798d2de0"></script>
+    <script type="text/javascript">
+        window.Env = {
+            WWW_HOST: "www.mafengwo.cn",
+            IMG_HOST: "images.mafengwo.net",
+            W_HTTP: "http:\/\/w.mafengwo.cn",
+            P_HOST: "passport.mafengwo.cn",
+            P_HTTP: "https:\/\/passport.mafengwo.cn",
+            PAGELET_HTTP: "http:\/\/pagelet.mafengwo.cn",
+            JS_HOST: "js.mafengwo.net",
+            TONGJI_HOST: "tongji.mafengwo.cn",
+            UID: 94635717,
+            CSTK: "00087ad97fb5dbf675b1b744deac4d69_6ccd23c404c737705585e01d0516c0de",
+            GOOGLE_MAP_KEY: "AIzaSyD-Su0x_rPy1xehlMBcMyTqWkU49Bk53nQ",
+            MOBILE_BINDED: true
+        };
+    </script>
+    <script async src="http://js.mafengwo.net/js/BrowserState.js?1542357400" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/js/jquery.time.js"></script>
+    <script type="text/javascript" src="/static/js/birthday.js"></script>
+    
+</body>
+<style>
+    #banner-con-gloable {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: -100%;
+        z-index: 110;
+        width: 100%;
+        height: 179px;
+        overflow-x: hidden;
+    }
+
+    #banner-con-gloable .banner-btn-con {
+        width: 100%;
+        height: 162px;
+        background: rgba(30, 15, 8, 0.95);
+        position: absolute;
+        bottom: 0;
+    }
+
+    #banner-con-gloable .banner-btn-con .close-btn {
+        position: absolute;
+        right: 35px;
+        top: 24px;
+        z-index: 120;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+    }
+
+    #banner-con-gloable .banner-image-con {
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        width: 1000px;
+        margin-right: -500px;
+    }
+
+    #float-pannel-gloable {
+        padding-left: 28px;
+        padding-bottom: 20px;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 110;
+        left: -230px;
+    }
+
+    #float-pannel-gloable .float-btn {
+        width: 24pxpx;
+        height: 24px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    #closed {
+        height: 24px;
+        width: 24px;
+        vertical-align: text-top;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+<style>
+    /* 微信弹层 */
+    .wx-mfw-pop {
+        width: 420px;
+        height: 285px;
+        padding-top: 45px;
+        text-align: center;
+        font-size: 16px;
+        color: #666;
+        line-height: 1.8em;
+    }
+
+    .wx-mfw-pop img {
+        margin-top: 10px;
+    }
+</style>
+<style type="text/css">
+    .video_upload {
+        position: absolute;
+        left: 100px;
+        top: 58px;
+        width: 500px;
+        background-color: #fff;
+        border: 1px solid #d3d3d3;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .video-hd {
+        height: 76px;
+        border-bottom: 2px solid #e5e5e5;
+        text-align: center;
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        line-height: 76px;
+    }
+
+    .video-hd .item {
+        float: left;
+        width: 50%;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .video-hd .item i {
+        display: inline-block;
+        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+        background: url(https://images.mafengwo.net/images/post/new_notes/sprite_v34.png) no-repeat -189px -470px;
+        vertical-align: -8px;
+        *vertical-align: middle;
+    }
+
+    .video-hd .item.on .icon-vonline {
+        background-position: -218px -470px;
+    }
+
+    .video-hd .item .icon-vlocal {
+        background-position: -345px -470px;
+    }
+
+    .video-hd .item.on .icon-vlocal {
+        background-position: -271px -470px;
+    }
+
+    .video-hd .item.on {
+        color: #ff9d00;
+    }
+
+    .video-hd .item.on:after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 5px;
+        background-color: #ff9d00;
+        border-radius: 5px;
+        bottom: -3px;
+        left: 50%;
+        margin-left: -75px;
+    }
+
+    .video-bd {
+        padding: 35px 35px 60px;
+        height: 95px;
+        position: relative;
+    }
+
+    .video-bd .art-tips {
+        font-size: 14px;
+    }
+
+    .vbd-local {
+        text-align: center;
+    }
+
+    .vbd-local .art-tips {
+        margin-top: 15px;
+    }
+
+    .vbd-online,
+    .vbd-online .art-tips {
+        text-align: left;
+    }
+
+    .vbd-online .a-inptxt {
+        font-size: 14px;
+    }
+
+    .video_bar {
+        margin-top: 25px;
+        padding-left: 55px;
+    }
+
+    .video_bar p {
+        width: 300px;
+        margin-right: 15px;
+        height: 18px;
+        background-color: #e2e2e2;
+        border-radius: 15px;
+    }
+
+    .video_bar p span {
+        background-color: #add75c;
+        display: block;
+        width: 0;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .video_bar strong {
+        font-weight: normal;
+        font-size: 14px;
+        color: #999;
+        line-height: 18px;
+        cursor: pointer;
+    }
+
+    .uping_per {
+        margin-top: 12px;
+        font-size: 12px;
+        color: #999;
+    }
+
+    .uping_per span {
+        color: #ff8a00;
+    }
+
+    .flt1 {
+        float: left;
+    }
+
+    ._j_process,
+    ._j_uploading_mode ._j_upload {
+        display: none;
+    }
+
+    ._j_uploading_mode ._j_process {
+        display: block;
+    }
+
+    .art-btn-upload {
+        display: inline-block;
+        margin-top: 15px;
+        width: 240px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 30px;
+        background: -webkit-linear-gradient(-30deg,
+                transparent 0%,
+                rgba(173, 217, 101, 0.3) 40%,
+                rgba(173, 217, 101, 1) 90%);
+        background: linear-gradient(-30deg right,
+                transparent 0%,
+                rgba(173, 217, 101, 0.3) 40%,
+                rgba(173, 217, 101, 1) 90%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#FFADD965', GradientType=0);
+        background-color: #47afbd;
+        position: relative;
+    }
+
+    .art-btn-upload:hover {
+        background-color: #add965;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ._j_upload_video_trigger {
+        display: inline-block;
+        opacity: 0;
+        filter: Alpha(Opacity=0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .editor-toolbar .item-active:hover .tooltip {
+        visibility: hidden;
+        opacity: 0;
+    }
+</style>
+<style type="text/css">
+    .video_upload {
+        position: absolute;
+        left: 100px;
+        top: 58px;
+        width: 500px;
+        background-color: #fff;
+        border: 1px solid #d3d3d3;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .video-hd {
+        height: 76px;
+        border-bottom: 2px solid #e5e5e5;
+        text-align: center;
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        line-height: 76px;
+    }
+
+    .video-hd .item {
+        float: left;
+        width: 50%;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .video-hd .item i {
+        display: inline-block;
+        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+        background: url(https://images.mafengwo.net/images/post/new_notes/sprite_v34.png) no-repeat -189px -470px;
+        vertical-align: -8px;
+        *vertical-align: middle;
+    }
+
+    .video-hd .item.on .icon-vonline {
+        background-position: -218px -470px;
+    }
+
+    .video-hd .item .icon-vlocal {
+        background-position: -345px -470px;
+    }
+
+    .video-hd .item.on .icon-vlocal {
+        background-position: -271px -470px;
+    }
+
+    .video-hd .item.on {
+        color: #ff9d00;
+    }
+
+    .video-hd .item.on:after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 5px;
+        background-color: #ff9d00;
+        border-radius: 5px;
+        bottom: -3px;
+        left: 50%;
+        margin-left: -75px;
+    }
+
+    .video-bd {
+        padding: 35px 35px 60px;
+        height: 95px;
+        position: relative;
+    }
+
+    .video-bd .art-tips {
+        font-size: 14px;
+    }
+
+    .vbd-local {
+        text-align: center;
+    }
+
+    .vbd-local .art-tips {
+        margin-top: 15px;
+    }
+
+    .vbd-online,
+    .vbd-online .art-tips {
+        text-align: left;
+    }
+
+    .vbd-online .a-inptxt {
+        font-size: 14px;
+    }
+
+    .video_bar {
+        margin-top: 25px;
+        padding-left: 55px;
+    }
+
+    .video_bar p {
+        width: 300px;
+        margin-right: 15px;
+        height: 18px;
+        background-color: #e2e2e2;
+        border-radius: 15px;
+    }
+
+    .video_bar p span {
+        background-color: #add75c;
+        display: block;
+        width: 0;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .video_bar strong {
+        font-weight: normal;
+        font-size: 14px;
+        color: #999;
+        line-height: 18px;
+        cursor: pointer;
+    }
+
+    .uping_per {
+        margin-top: 12px;
+        font-size: 12px;
+        color: #999;
+    }
+
+    .uping_per span {
+        color: #ff8a00;
+    }
+
+    .flt1 {
+        float: left;
+    }
+
+    ._j_process,
+    ._j_uploading_mode ._j_upload {
+        display: none;
+    }
+
+    ._j_uploading_mode ._j_process {
+        display: block;
+    }
+
+    .art-btn-upload {
+        display: inline-block;
+        margin-top: 15px;
+        width: 240px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 30px;
+        background: -webkit-linear-gradient(-30deg,
+                transparent 0%,
+                rgba(173, 217, 101, 0.3) 40%,
+                rgba(173, 217, 101, 1) 90%);
+        background: linear-gradient(-30deg right,
+                transparent 0%,
+                rgba(173, 217, 101, 0.3) 40%,
+                rgba(173, 217, 101, 1) 90%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#FFADD965', GradientType=0);
+        background-color: #47afbd;
+        position: relative;
+    }
+
+    .art-btn-upload:hover {
+        background-color: #add965;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    ._j_upload_video_trigger {
+        display: inline-block;
+        opacity: 0;
+        filter: Alpha(Opacity=0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .editor-toolbar .item-active:hover .tooltip {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+</style>
+<style type="text/css">
+    .domn_in p a:hover {
+        text-decoration: none;
+        color: #666;
+    }
+
+    .highlight {
+        color: #ffa801;
+    }
+
+    .input_like input {
+        line-height: normal;
+    }
+
+    ._j_page_loader {
+        background-color: #fff5e5;
+        border-radius: 4px;
+        color: #666;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    ._j_page_loader i {
+        background: rgba(0, 0, 0, 0) url("http://css.mafengwo.net/images/mfw-ask/mfwask-2016sprite_v3.png") no-repeat scroll 0 -592px;
+        display: inline-block;
+        height: 10px;
+        margin-left: 6px;
+        width: 10px;
+    }
+
+    ._j_page_loader:hover {
+        background-color: #efefef;
+        color: #666;
+        text-decoration: none;
+    }
+
+    .loader {
+        background-color: #efefef;
+        color: #666;
+        text-decoration: none;
+    }
+
+    ._j_page_loader:hover i {
+        background-position: 0 -621px;
+    }
+</style>
+
+
+</html>
